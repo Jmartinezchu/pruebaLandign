@@ -1,0 +1,206 @@
+@media (max-width:900px) {
+  /* landing page */
+  .presentacion{
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  /* contenido en columna  */
+  .cont-carrusel{
+    flex-wrap: wrap;
+  }
+  .tarjetas{
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    /* background-color: rgb(168, 0, 0); */
+  }
+  .nosotros__card{
+    flex-wrap: wrap;
+  }
+  .nosotros__card-reverso{
+    flex-wrap: wrap;
+  }
+  .redes{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .redes__img{
+    width: 20rem !important;
+  }
+  .redes__seguir{
+    font-size:1.5rem !important;
+  }
+  .iconos__comp{
+    display:flex;
+    flex-wrap: wrap;
+  }
+  .quitar_quitar{
+    display: none;
+  }
+  .footer__contenido{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer__cont-items{
+    width: 90% !important;
+  }
+  /* Secciones productos */
+  .seccion-img{
+    width: 20rem !important;
+  }
+
+}
+@media (max-width:756px) {
+  .iconos__comp{
+    display: flex;
+    flex-wrap: wrap;
+    font-size:1rem !important;
+  }
+  .quitar{
+    display:none !important;
+  }
+  .iconos__comp h2{
+    padding:1rem;
+  }
+}
+
+@media (max-width:520px) {
+  /* html{
+    font-size:0.7rem !important;
+  } */
+/* desparece el stogan */
+.cabecera__slogan{
+  font-size:0.5rem !important;
+}
+  /* ESTILOS BTN MENU */
+  .cabecera__menu-btn{
+    display: block !important;
+    cursor:pointer;
+  }
+
+  .imenu{
+    height: 10rem !important;
+  }
+  .cabecera__menu-nav{ 
+    position: absolute;
+    display: inline-block !important;
+    background-color: var(--color-footer);
+    width: 65%;
+    top: 0;
+    height: 10.5rem;
+    text-align:center;
+    clip-path: circle(0 at center);
+    transition: clip-path 1s ease-in-out;
+    margin-left: 5.5rem;
+    border-radius:30px
+
+  }
+  .cabecera__menu-nav-enlace, .cabecera__menu-nav-contacto{
+    display: inline-block !important;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .menu-btn-input:checked + .cabecera__menu-nav{
+    clip-path: circle(100% at center);
+
+  }
+
+  /* .cabecera__menu-nav-enlace:hover, .cabecera__menu-nav-contacto:hover{
+   background-color: var(--color-iconos)
+  } */
+
+  /* imagen presentacion */
+  .presentacion__img-img{
+    width: 25rem !important;
+  }
+  /* .presentacion__descripcion{
+    padding-bottom: 3.5rem;
+    margin-bottom:3rem;
+  } */
+  .nosotros__card-descripcion{
+    font-size:1rem !important;
+  }
+  .presentacion__descripcion-nombre{
+    font-size:2rem !important;
+  }
+  .presentacion__descripcion-texto{
+      font-size: 1.5rem !important;
+  }
+  .cards {
+    height:10em !important;
+  }
+
+  .tarjetas .tarjetas__tarjeta .tarjetas__tarjeta-img{
+    width: 15rem !important;
+  }
+  .nosotros__card-img{
+    width:19rem;
+    margin: 1rem;
+    border-radius: 10px;
+  }
+  .redes__redes-icono{
+    display:flex;
+    flex-direction: column;
+  }
+  .ifooter{
+    height: 30rem !important;
+  }
+  .footer__cont-items{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /* Secciones productos */
+  .seccion-img{
+    width: 17.5rem !important;
+  }
+  /* formulario */
+  .cont__frm{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .formulario{
+    width: 100% !important;
+  }
+  .imagen__formulario{
+    display: none !important;
+  }
+  /* galeria de imagenes */
+  .cont__galeria{
+    display:grid;
+    grid-template-columns: repeat(2,1fr) !important;
+  }
+
+  .list__modal{
+    display:grid;
+    grid-template-columns: repeat(3,1fr) !important;
+  }
+
+  .modal__galeria #myImgModal{
+    width: 90% !important;
+    height: 80% !important;
+  }
+}
+
+@media (max-width:410px) {
+  .redes{
+    display: flex;
+    flex-wrap: wrap-reverse !important;
+  }
+  .presentacion__img-img{
+    width: 18rem !important;
+  }
+  .presentacion__descripcion-nombre{
+    font-size:1.5rem !important;
+  }
+  .presentacion__descripcion-texto{
+      font-size: 1rem !important;
+  }
+  .carrusel__descripcion-msj{
+    padding: 0 !important;
+    font-size:1rem !important;
+  }
+  .nosotros__card-img{
+    width: 15rem;
+  }
+}
