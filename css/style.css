@@ -2,14 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
 
 :root{
-    --color-primary: #ff0000;
+    --color-primary: #11df2d;
     --color-secondary: #ffffff;
     --color-btn: #ffff40;
     --color-title: #000000;
     --color-text: #252525;
     --color-contact: #28ECEC;
     --color-iconos:#11153E; 
-    --color-footer: #CF0000;
+    --color-footer: #0b5511;
 }
 
 *{
@@ -58,7 +58,7 @@ a{
 .cabecera__slogan{
     text-align: center;
     font-size:0.6rem;
-    background-color: rgba(255,0,0,0.8);
+    background-color: rgba(0, 255, 42, 0.8);
 }
 .cabecera__menu{
     display:flex;
@@ -147,6 +147,7 @@ a{
     margin-bottom: 0;
     width: 100%;
     border-style: none;
+    color: var(--color-primary);
 }
 
 /* Carrusel  */
@@ -380,11 +381,12 @@ input[type=radio] {
     color: var(--color-secondary);
     border-radius:50%
 }
-#wavefooter{
+.wavefooter{
     display: flex;
     align-items: flex-end;
     margin-bottom: 0;
     width: 100%;
+    color: var(--color-footer);
 }
 .footer__contenido{
     display: flex;
