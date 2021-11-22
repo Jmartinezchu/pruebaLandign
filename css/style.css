@@ -381,8 +381,9 @@ input[type=radio] {
     color: var(--color-secondary);
     border-radius:50%
 }
-.wavefooter{
-    display: flex;
+#wavefooter{
+    display: none;
+    /* display: flex; */
     align-items: flex-end;
     margin-bottom: 0;
     width: 100%;
