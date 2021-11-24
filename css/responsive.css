@@ -116,15 +116,15 @@
   /* .cabecera__menu-nav-enlace:hover, .cabecera__menu-nav-contacto:hover{
    background-color: var(--color-iconos)
   } */
-
+  
   /* imagen presentacion */
   .presentacion__img-img{
     width: 25rem !important;
   }
-  /* .presentacion__descripcion{
+  .presentacion__descripcion{
     padding-bottom: 3.5rem;
     margin-bottom:3rem;
-  } */
+  }
   .nosotros__card-descripcion{
     font-size:1rem !important;
   }
