@@ -24,22 +24,6 @@ body{
 }
 
 
-
-iframe{
-    width:100%;
-    border-style: none;
-}
-.imenu{
-    position:fixed;
-    height: 6rem;
-    z-index: 3;
-}
-.ifooter{
-    position:relative;
-    height: 18rem;
-    background:var(--color-footer);
-    bottom: 0;
-}
 a{
     text-decoration: none;
 }
@@ -106,7 +90,6 @@ a{
 }
 
 /* Presentacion */
-
 .presentacion{
     width: 100%;
     display: flex;
@@ -120,7 +103,7 @@ a{
     gap: 1rem;
 }
 .presentacion__img{
-    padding: auto;
+    padding: 0;
 }
 .presentacion__img-img{
     width: 30rem;
@@ -294,7 +277,6 @@ input[type=radio] {
 .nosotros{
     width: 100%;    
 }
-
 .nosotros__card{
     display: flex;
     margin: 50px;
@@ -303,7 +285,6 @@ input[type=radio] {
     text-align: center;
     justify-content: center;
     align-items: center;
-
 }
 .nosotros__card-reverso{
     display: flex;
@@ -329,7 +310,6 @@ input[type=radio] {
     font-size: 1.5rem;
     padding-bottom: 1.5rem;
 }
-
 
 /* estilo area redes */
 .redes{
@@ -360,6 +340,7 @@ input[type=radio] {
     padding: 1rem 1rem;
     color: var(--color-iconos)
 }
+
 /* iconos compromiso */
 .iconos__comp{
     display: flex;
@@ -370,7 +351,6 @@ input[type=radio] {
 }
 
 /* Footer */
-
 .btn__subir{
     color: var(--color-primary);
     display: flex;
@@ -507,13 +487,13 @@ input[type=radio] {
     border-radius: 15px;
     background-color: rgba(0,0,0,0.3);
 }
-form label, input[type="text"], input[type="number"], textarea{
+form label, input[type="text"], input[type="tel"], textarea{
     width: 90%;
     margin: 0.5rem 0;
     border-style: none;
     background-color: rgba(0,0,0,0.0);    
 }
-input[type="text"], input[type="number"], textarea{
+input[type="text"], input[type="tel"], textarea{
     display: inline-block;
     border-bottom: 2px solid #000;
     padding: 0.5rem;
@@ -560,7 +540,7 @@ textarea{
 /* modal de la galeria */
 .modal__galeria{
     display:none;
-    position:fixed;
+    position: fixed;
     top: 0;
     left:0;
     z-index: 3;
@@ -570,13 +550,19 @@ textarea{
     padding:2rem;
     background-color: rgba(0, 0, 0, 0.8);
 }
-
+.modal__galeria #myImgModal{
+    width: 70%;
+    height: 70%;
+    display:block;
+    margin:auto;
+    /* max-width:50rem; */
+}
 .list__modal{
-    width: 95%;
-    /* height: 10vh; */
+    width: 100%;
     margin:1rem auto;
     display:grid;
     grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(2,7rem);
 }
 .modal__galeria .list__modal img{
     width: 100%;
@@ -584,13 +570,7 @@ textarea{
     object-fit:cover;
     cursor: pointer;
 }
-.modal__galeria #myImgModal{
-    width: 70%;
-    height: 60%;
-    display:block;
-    margin:auto;
-    max-width:50rem;
-}
+
 .btn-close{
     position:absolute;
     top: 1rem;
@@ -603,8 +583,8 @@ textarea{
 
 /*Animaciones*/
 
-/* animacion de zoom */
+/* animacion de zoom
 @keyframes zoom{
     from {transform:scale(0);}
     to {transform:scale(1);}
-}
+} */

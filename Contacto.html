@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
+    <meta scharset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactanos</title>
@@ -13,32 +13,8 @@
 </head>
 <body>
     <!-- Este es el menu -->
-    <div id="cabecera">
-        <div class="cabecera__slogan">
-            <h2><span class="iconify-inline" data-icon="bi:bookmark-check"></span>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            </h2>
-        </div>
-        <nav class="cabecera__menu">
-            <div>
-                <a href="index.html"><img class="cabecera__menu-logo" src="/img/img/logop.png" alt="Logo de la empresa"></a>
-            </div>
-            <!-- boton -->
-            <label for="menu-btn" class="cabecera__menu-btn">
-                <img src="/img/svg/btn-menu.svg" alt="botón menu" class="menu-btn-img">
-             </label>
-            <input type="checkbox" id="menu-btn" class="menu-btn-input">
-            <!-- enlaces de navegacion -->
-            <div class="cabecera__menu-nav">
-                <a class="cabecera__menu-nav-enlace" href="index.html">Inicio</a>
-                <a class="cabecera__menu-nav-enlace" href="Productos.html">Productos</a>
-                <a class="cabecera__menu-nav-enlace" href="Preguntas.html">Preguntas</a>
-                <a class="cabecera__menu-nav-contacto" href="Contacto.html">Contáctenos</a>
-            </div>
-        </nav>
-        <div>
-            <a href="tel:970860246" class="cabecera__menu-telefono"><span class="iconify" data-icon="bx:bxs-phone-call"></span>Atención al Cliente</a>
-        </div>
+    <div id="header-menu">
+        <!-- aqui va el menu -->
     </div>
     <!-- <div class="contenedormenu">
         <iframe class="imenu" src="header.html" allowfullscreen></iframe>
@@ -46,15 +22,20 @@
     <!-- contenido contactanos -->
     <div class="cont__frm">
         <div class="formulario">
-            <form action="">
+            <form action="" id="formulario" >
                 <h2><b>Contactanos</b></h2>
                 <label for="nombres">Nombre y Apellidos</label>
-                <input type="text" name="nombres" id="" placeholder="Nombre y Apellidos">
+                <input type="text" name="nombres" id="nombres" placeholder="Nombre completo">
+                
                 <label for="celular">Celular</label>
-                <input type="number" name="celular" id="" placeholder="Ingresa tu número de celular">
+                <input type="tel" name="celular" id="celular" placeholder="Ingresa tu número de celular">
+                
                 <label for="asunto">Asunto</label>
-                <textarea name="asunto" id="" cols="30" rows="10" placeholder="Escribe aqui tu mensaje"></textarea>
-                <input type="button"  class="btn-productos" value="Enviar" id="btn-enviar">
+                <input type="text" name="asunto" id="asunto" placeholder="Ingresar asunto a tratar">
+                
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje"  placeholder="¿Porque motivo nos escribes?"></textarea>
+                <button type="submit"  class="btn-productos" id="btn-enviar">Enviar</button>
             </form>
         </div>
         <div class="imagen__formulario">
@@ -92,7 +73,22 @@
     </div>
     <img id="wavefooter" src="/img/img/waveFooter.svg" alt="Wave Footer">
     <div style="background-color: var(--color-footer);">
-        <iframe class="ifooter" src="footer.html"></iframe>
+        <div id="footer">
+            <!-- aqui va el footer -->
+        </div>
     </div>
+
+
+    <script src="js/head-foot.js"></script> <!--este es el menu  --> 
+    <script src="js/app.js"></script> 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+    emailjs.init("user_QMFPARiasfp4iCN0qQ4y3");
+    })();
+    </script>
+    <!-- animacion de alertas swal -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 </body>
 </html>
