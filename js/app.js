@@ -24,7 +24,7 @@
             swal("¡Alerta!", "Tu nombre no es valido", "warning");
         }else if (isNaN(tempParams.celular) || tempParams.celular.length !== 9 ) {
             // celular valido
-            swal("¡Alerta!", "El numero ingresado no es valido", "warning");
+            swal("¡Alerta!", "El número ingresado no es valido", "warning");
         }else if (tempParams.asunto.length <9 && tempParams.asunto.length > 30 ) {
             // validar asunto
             swal("¡Alerta!", "El asunto no es valido", "warning");
