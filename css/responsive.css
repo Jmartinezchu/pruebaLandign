@@ -138,9 +138,9 @@
     height:10em !important;
   }
 
-  .tarjetas .tarjetas__tarjeta .tarjetas__tarjeta-img{
-    width: 15rem !important;
-  }
+  /* .tarjetas .tarjetas__tarjeta .tarjetas__tarjeta-img{
+    width: 15em !important;
+  } */
   .nosotros__card-img{
     width:19rem;
     margin: 1rem;

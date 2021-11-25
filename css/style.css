@@ -228,7 +228,10 @@ input[type=radio] {
 .tarjetas__tarjeta-img{
     display: block;
     margin: auto;
-    max-width: 14rem;
+    width:100%;
+    /* max-width: ; */
+    /* max-width: 14rem; */
+    height: 10rem;
     border-radius: 10px;
 }
 .tarjetas__tarjeta-descripcion{
