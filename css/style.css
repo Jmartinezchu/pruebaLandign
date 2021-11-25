@@ -436,6 +436,7 @@ input[type=radio] {
     width: 24rem;
     margin: 1rem 1rem;
     border-radius: 15px;
+    height:15rem;
 }
 
 /* Estilos pagina preguntas */

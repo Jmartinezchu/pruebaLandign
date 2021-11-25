@@ -162,6 +162,12 @@
   .seccion-img{
     width: 17.5rem !important;
   }
+  .seccion-img{
+    width: 24rem;
+    height:10rem !important;
+}
+
+
   /* formulario */
   .cont__frm{
     display: flex;
